@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){FILE *fp;char name[120],data[1000];int n,i,count=0,ch;printf("Enter file name: ");scanf("%119s",name);printf("Enter number of characters to reverse: ");if(scanf("%d",&n)!=1||n<0||n>999)return 1;fp=fopen(name,"r");if(!fp){perror("Cannot open file");return 1;}while(count<n&&(ch=fgetc(fp))!=EOF)data[count++]=(char)ch;fclose(fp);if(count<n){printf("File contains only %d characters.\n",count);return 1;}printf("Reversed first %d characters: ",n);for(i=n-1;i>=0;i--)putchar((unsigned char)data[i]);puts("");return 0;}

@@ -1,0 +1,3 @@
+#include <stdio.h>
+int copy(FILE *in,FILE *out){int ch;while((ch=fgetc(in))!=EOF)if(fputc(ch,out)==EOF)return 0;return 1;}
+int main(void){FILE *a,*b,*c;char f1[120],f2[120],f3[120];printf("Enter first file: ");scanf("%119s",f1);printf("Enter second file: ");scanf("%119s",f2);printf("Enter destination file: ");scanf("%119s",f3);a=fopen(f1,"r");if(!a){perror("First file");return 1;}b=fopen(f2,"r");if(!b){perror("Second file");fclose(a);return 1;}c=fopen(f3,"w");if(!c){perror("Destination");fclose(a);fclose(b);return 1;}if(!copy(a,c)||!copy(b,c)){puts("Write failed.");return 1;}fclose(a);fclose(b);fclose(c);printf("Merged files into %s.\n",f3);return 0;}

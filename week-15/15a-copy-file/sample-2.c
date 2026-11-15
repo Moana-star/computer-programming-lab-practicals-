@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){FILE *src,*dst;char source[120],target[120];int ch;printf("Enter source file: ");scanf("%119s",source);printf("Enter destination file: ");scanf("%119s",target);src=fopen(source,"r");if(!src){perror("Cannot open source");return 1;}dst=fopen(target,"w");if(!dst){perror("Cannot create destination");fclose(src);return 1;}while((ch=fgetc(src))!=EOF)fputc(ch,dst);fclose(src);fclose(dst);printf("Contents copied from %s to %s.\n",source,target);return 0;}
