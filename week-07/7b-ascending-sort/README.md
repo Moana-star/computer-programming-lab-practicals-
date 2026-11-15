@@ -1,70 +1,15 @@
-# 7b — Sort an array in ascending order
+# Practical Question
 
-**Manual:** Week 7, 7b
-
-Each sample is a complete, standalone C program.
+Write a C Program to Sort the Array in an Ascending Order.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-5
-5 2 9 1 6
-```
-
-**Working / calculation**
-
-Arrange values from smallest to largest.
-
-**Expected output**
-
-```text
-Ascending order: 1 2 5 6 9
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-4
-12 -1 7 3
-```
-
-**Working / calculation**
-
-Arrange values from smallest to largest.
-
-**Expected output**
-
-```text
-Ascending order: -1 3 7 12
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-6
-8 8 2 5 1 4
-```
-
-**Working / calculation**
-
-Arrange values from smallest to largest.
-
-**Expected output**
-
-```text
-Ascending order: 1 2 4 5 8 8
-```
-
-Compile: `gcc sample-1.c -o program`.
+**Complete C code:** [sample-3.c](sample-3.c)

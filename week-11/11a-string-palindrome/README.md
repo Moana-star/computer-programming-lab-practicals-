@@ -1,72 +1,15 @@
-# 11a — Determine whether a string is a palindrome using a function
+# Practical Question
 
-**Manual:** Week 11, 11a
-
-Each sample is a complete, standalone C program. String inputs in these examples are single words (no spaces).
+Write a C program using user defined functions to determine whether the given string is palindrome or not.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-level
-```
-
-**Working / calculation**
-
-level reads the same in both directions.
-
-**Expected output**
-
-```text
-Palindrome.
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-madam
-```
-
-**Working / calculation**
-
-madam reads the same in both directions.
-
-**Expected output**
-
-```text
-Palindrome.
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-computer
-```
-
-**Working / calculation**
-
-computer is different when reversed.
-
-**Expected output**
-
-```text
-Not a palindrome.
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
-```
+**Complete C code:** [sample-3.c](sample-3.c)
