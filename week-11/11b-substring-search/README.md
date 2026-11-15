@@ -1,75 +1,21 @@
-# 11b — Find the index where a substring begins, or -1
+# 11(b) — Find the position of a substring
 
-**Manual:** Week 11, 11b
-
-Each sample is a complete, standalone C program. String inputs in these examples are single words (no spaces).
+**Manual:** Week 11, 11(b). The index is zero-based; if the substring is absent, the result is -1.
 
 ## Sample 1
-
 **Source file:** `sample-1.c`
-
-**Input**
-
-```text
-computer
-put
-```
-
-**Working / calculation**
-
-The substring put begins at index 3 (zero-based).
-
-**Expected output**
-
-```text
-Position = 3
-```
+**Input:** `computer`, `put`
+**Working:** `put` begins at index 3.
+**Expected output:** `Position = 3`
 
 ## Sample 2
-
 **Source file:** `sample-2.c`
-
-**Input**
-
-```text
-programming
-gram
-```
-
-**Working / calculation**
-
-The substring gram begins at index 2.
-
-**Expected output**
-
-```text
-Position = 2
-```
+**Input:** `programming`, `gram`
+**Working:** `gram` begins at index 3.
+**Expected output:** `Position = 3`
 
 ## Sample 3
-
 **Source file:** `sample-3.c`
-
-**Input**
-
-```text
-computer
-science
-```
-
-**Working / calculation**
-
-science does not occur in computer.
-
-**Expected output**
-
-```text
-Position = -1
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
-```
+**Input:** `computer`, `science`
+**Working:** The substring does not occur in the main string.
+**Expected output:** `Position = -1`

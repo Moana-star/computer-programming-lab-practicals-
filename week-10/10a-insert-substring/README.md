@@ -1,78 +1,21 @@
-# 10a — Insert a substring into a main string at a given position
+# 10(a) — Insert a substring into a main string
 
-**Manual:** Week 10, 10a
-
-Each sample is a complete, standalone C program. String inputs in these examples are single words (no spaces).
+**Manual:** Week 10, 10(a). The position is zero-based.
 
 ## Sample 1
-
 **Source file:** `sample-1.c`
-
-**Input**
-
-```text
-COMPUTER
-SCI
-3
-```
-
-**Working / calculation**
-
-Insert SCI after the first three characters: COM + SCI + PUTER.
-
-**Expected output**
-
-```text
-COMSCI PUTER
-```
+**Input:** `COMPUTER`, `SCI`, position `3`
+**Working:** COM + SCI + PUTER = COMSCIPUTER.
+**Expected output:** `Result: COMSCIPUTER`
 
 ## Sample 2
-
 **Source file:** `sample-2.c`
-
-**Input**
-
-```text
-HELLO
-X
-2
-```
-
-**Working / calculation**
-
-Insert X after HE.
-
-**Expected output**
-
-```text
-HEXLLO
-```
+**Input:** `HELLO`, `X`, position `2`
+**Working:** HE + X + LLO = HEXLLO.
+**Expected output:** `Result: HEXLLO`
 
 ## Sample 3
-
 **Source file:** `sample-3.c`
-
-**Input**
-
-```text
-GOOD
-DAY
-4
-```
-
-**Working / calculation**
-
-Append DAY after GOOD.
-
-**Expected output**
-
-```text
-GOODDAY
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
-```
+**Input:** `GOOD`, `DAY`, position `4`
+**Working:** GOOD + DAY = GOODDAY.
+**Expected output:** `Result: GOODDAY`
