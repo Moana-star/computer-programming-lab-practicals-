@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int n,a[100],i,hi,lo;printf("Enter count (1-100): ");if(scanf("%d",&n)!=1||n<1||n>100)return 1;for(i=0;i<n;i++)if(scanf("%d",&a[i])!=1)return 1;hi=lo=a[0];for(i=1;i<n;i++){if(a[i]>hi)hi=a[i];if(a[i]<lo)lo=a[i];}printf("Largest = %d\nSmallest = %d\n",hi,lo);return 0;}
