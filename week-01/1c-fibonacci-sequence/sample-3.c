@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int n,i;unsigned long long a=0,b=1,c;printf("Enter number of terms: ");if(scanf("%d",&n)!=1||n<=0)return 1;printf("Fibonacci sequence: ");for(i=0;i<n;i++){printf("%llu%s",a,i==n-1?"\n":" ");c=a+b;a=b;b=c;}return 0;}
