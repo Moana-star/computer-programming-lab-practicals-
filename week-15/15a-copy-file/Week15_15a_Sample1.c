@@ -6,6 +6,7 @@ int main()
     int ch, count = 0;
 
     fs = fopen("a1.txt", "r");
+
     if (fs == NULL)
     {
         printf("Source file opening error\n");
@@ -13,6 +14,7 @@ int main()
     }
 
     ft = fopen("b1.txt", "w");
+
     if (ft == NULL)
     {
         printf("Target file opening error\n");
@@ -26,8 +28,11 @@ int main()
         count++;
     }
 
-    printf("%d characters copied from 'a1.txt' to 'b1.txt'\n", count);
+    printf("%d characters copied from 'a1.txt' to 'b1.txt'\n",
+           count);
+
     fclose(fs);
     fclose(ft);
+
     return 0;
 }

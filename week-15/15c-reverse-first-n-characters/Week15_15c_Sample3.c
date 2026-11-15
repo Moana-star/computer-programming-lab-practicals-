@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     }
 
     n = atoi(argv[2]);
+
     if (n < 0 || n >= 100)
     {
         printf("Invalid number of characters.\n");
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
     }
 
     fp = fopen(argv[1], "r");
+
     if (fp == NULL)
     {
         printf("File cannot be opened.\n");
@@ -31,8 +33,11 @@ int main(int argc, char *argv[])
     fclose(fp);
 
     printf("Reversed characters: ");
+
     for (i = count - 1; i >= 0; i--)
         printf("%c", a[i]);
+
     printf("\n");
+
     return 0;
 }
