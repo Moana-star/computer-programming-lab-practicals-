@@ -1,2 +1,0 @@
-#include <stdio.h>
-int main(void){double a,x,b,den;printf("Enter a, x and b: ");if(scanf("%lf%lf%lf",&a,&x,&b)!=3)return 1;den=a*x-b;if(den==0){puts("Expression is undefined.");return 1;}printf("Result = %.2f\n",(a*x+b)/den);return 0;}

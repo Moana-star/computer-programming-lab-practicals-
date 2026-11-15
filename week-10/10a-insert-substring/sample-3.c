@@ -1,3 +1,0 @@
-#include <stdio.h>
-#include <string.h>
-int main(void){char s[200],t[100],out[300];int p,n,m,i;printf("Enter main string (no spaces): ");scanf("%199s",s);printf("Enter substring: ");scanf("%99s",t);printf("Enter insertion position (0-based): ");scanf("%d",&p);n=strlen(s);m=strlen(t);if(p<0||p>n)return 1;for(i=0;i<p;i++)out[i]=s[i];for(i=0;i<m;i++)out[p+i]=t[i];for(i=p;i<n;i++)out[m+i]=s[i];out[n+m]='\0';printf("Result: %s\n",out);return 0;}

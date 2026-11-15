@@ -1,2 +1,0 @@
-#include <stdio.h>
-int main(void){double a,b;char op;printf("Enter number operator number: ");if(scanf("%lf %c %lf",&a,&op,&b)!=3)return 1;switch(op){case '+':printf("Result = %.2f\n",a+b);break;case '-':printf("Result = %.2f\n",a-b);break;case '*':printf("Result = %.2f\n",a*b);break;case '/':if(b==0)puts("Division by zero is not allowed.");else printf("Result = %.2f\n",a/b);break;default:puts("Invalid operator.");}return 0;}

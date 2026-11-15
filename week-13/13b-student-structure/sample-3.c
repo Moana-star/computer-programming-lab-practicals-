@@ -1,3 +1,0 @@
-#include <stdio.h>
-struct Student{int roll;char name[50];float m1,m2,m3;};
-int main(void){struct Student s;float total,percentage;printf("Enter roll number and name: ");if(scanf("%d%49s",&s.roll,s.name)!=2)return 1;printf("Enter marks in three subjects: ");if(scanf("%f%f%f",&s.m1,&s.m2,&s.m3)!=3)return 1;if(s.m1<0||s.m1>100||s.m2<0||s.m2>100||s.m3<0||s.m3>100)return 1;total=s.m1+s.m2+s.m3;percentage=total/3.0f;printf("Roll No: %d\nName: %s\nTotal = %.2f\nPercentage = %.2f%%\n",s.roll,s.name,total,percentage);return 0;}
