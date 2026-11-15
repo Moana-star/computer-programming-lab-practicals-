@@ -1,72 +1,15 @@
-# 3a — Check whether a number is a perfect number
+# Practical Question
 
-**Manual:** Week 03, 3a
-
-Each sample is a complete, standalone C program.
+Write a C program to check whether given number is perfect number or Not.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-6
-```
-
-**Working / calculation**
-
-Proper divisors: 1 + 2 + 3 = 6.
-
-**Expected output**
-
-```text
-6 is a perfect number.
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-28
-```
-
-**Working / calculation**
-
-Proper divisors: 1 + 2 + 4 + 7 + 14 = 28.
-
-**Expected output**
-
-```text
-28 is a perfect number.
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-12
-```
-
-**Working / calculation**
-
-Proper divisors: 1 + 2 + 3 + 4 + 6 = 16, not 12.
-
-**Expected output**
-
-```text
-12 is not a perfect number.
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program -lm
-./program
-```
+**Complete C code:** [sample-3.c](sample-3.c)
