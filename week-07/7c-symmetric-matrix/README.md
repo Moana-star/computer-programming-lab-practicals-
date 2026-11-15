@@ -1,74 +1,15 @@
-# 7c — Check whether a matrix is symmetric
+# Practical Question
 
-**Manual:** Week 7, 7c
-
-Each sample is a complete, standalone C program.
+Write a C Program to find whether given matrix is symmetric or not.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-2
-1 2
-2 3
-```
-
-**Working / calculation**
-
-Every element equals its transposed position.
-
-**Expected output**
-
-```text
-Matrix is symmetric.
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-2
-1 0
-2 1
-```
-
-**Working / calculation**
-
-a[0][1] differs from a[1][0].
-
-**Expected output**
-
-```text
-Matrix is not symmetric.
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-3
-1 2 3
-2 4 5
-3 5 6
-```
-
-**Working / calculation**
-
-The matrix equals its transpose.
-
-**Expected output**
-
-```text
-Matrix is symmetric.
-```
-
-Compile: `gcc sample-1.c -o program`.
+**Complete C code:** [sample-3.c](sample-3.c)

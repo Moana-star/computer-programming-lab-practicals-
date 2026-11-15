@@ -1,75 +1,15 @@
-# 13a — Display array elements using calloc()
+# Practical Question
 
-**Manual:** Week 13, 13a
-
-Each sample is a complete, standalone C program.
+Write a C program to Display array elements using calloc() function.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-5
-1 2 3 4 5
-```
-
-**Working / calculation**
-
-Display the five values stored in the allocated array.
-
-**Expected output**
-
-```text
-Array elements: 1 2 3 4 5
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-4
-10 20 30 40
-```
-
-**Working / calculation**
-
-Display the four values stored in the allocated array.
-
-**Expected output**
-
-```text
-Array elements: 10 20 30 40
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-3
-7 0 -2
-```
-
-**Working / calculation**
-
-Display the three values stored in the allocated array.
-
-**Expected output**
-
-```text
-Array elements: 7 0 -2
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
-```
+**Complete C code:** [sample-3.c](sample-3.c)

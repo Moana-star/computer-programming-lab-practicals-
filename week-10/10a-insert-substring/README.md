@@ -1,21 +1,15 @@
-# 10(a) — Insert a substring into a main string
+# Practical Question
 
-**Manual:** Week 10, 10(a). The position is zero-based.
+Write a C program to use function to insert a sub-string in to given main string from a given position.
 
 ## Sample 1
-**Source file:** `sample-1.c`
-**Input:** `COMPUTER`, `SCI`, position `3`
-**Working:** COM + SCI + PUTER = COMSCIPUTER.
-**Expected output:** `Result: COMSCIPUTER`
+
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
-**Source file:** `sample-2.c`
-**Input:** `HELLO`, `X`, position `2`
-**Working:** HE + X + LLO = HEXLLO.
-**Expected output:** `Result: HEXLLO`
+
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
-**Source file:** `sample-3.c`
-**Input:** `GOOD`, `DAY`, position `4`
-**Working:** GOOD + DAY = GOODDAY.
-**Expected output:** `Result: GOODDAY`
+
+**Complete C code:** [sample-3.c](sample-3.c)

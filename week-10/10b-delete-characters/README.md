@@ -1,21 +1,15 @@
-# 10(b) — Delete n characters from a given position
+# Practical Question
 
-**Manual:** Week 10, 10(b). Positions are zero-based.
+Write a C program that uses functions to delete n Characters from a given position in a given string.
 
 ## Sample 1
-**Source file:** `sample-1.c`
-**Input:** `COMPUTER`, position `2`, count `3`
-**Working:** Remove M, P and U; COMPUTER becomes COTER.
-**Expected output:** `Result: COTER`
+
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
-**Source file:** `sample-2.c`
-**Input:** `PROGRAMMING`, position `0`, count `3`
-**Working:** Remove PRO; result is GRAMMING.
-**Expected output:** `Result: GRAMMING`
+
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
-**Source file:** `sample-3.c`
-**Input:** `DATABASE`, position `4`, count `2`
-**Working:** Remove B and A; result is DATASE.
-**Expected output:** `Result: DATASE`
+
+**Complete C code:** [sample-3.c](sample-3.c)

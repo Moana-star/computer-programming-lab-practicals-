@@ -1,72 +1,15 @@
-# 12b — Find string length using a pointer
+# Practical Question
 
-**Manual:** Week 12, 12b
-
-Each sample is a complete, standalone C program.
+Write a C program to find the length of the string using Pointer.
 
 ## Sample 1
 
-**Source file:** `sample-1.c`
-
-**Input**
-
-```text
-computer
-```
-
-**Working / calculation**
-
-Pointer traverses eight characters.
-
-**Expected output**
-
-```text
-Length = 8
-```
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
 
-**Source file:** `sample-2.c`
-
-**Input**
-
-```text
-programming
-```
-
-**Working / calculation**
-
-Pointer traverses eleven characters.
-
-**Expected output**
-
-```text
-Length = 11
-```
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
 
-**Source file:** `sample-3.c`
-
-**Input**
-
-```text
-Moana
-```
-
-**Working / calculation**
-
-Pointer traverses five characters.
-
-**Expected output**
-
-```text
-Length = 5
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
-```
+**Complete C code:** [sample-3.c](sample-3.c)

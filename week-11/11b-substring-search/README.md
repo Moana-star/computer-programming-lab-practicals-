@@ -1,21 +1,15 @@
-# 11(b) — Find the position of a substring
+# Practical Question
 
-**Manual:** Week 11, 11(b). The index is zero-based; if the substring is absent, the result is -1.
+Write a C program that displays the position or index in the main string S where the sub string T begins, or -1 if S doesn't contain T.
 
 ## Sample 1
-**Source file:** `sample-1.c`
-**Input:** `computer`, `put`
-**Working:** `put` begins at index 3.
-**Expected output:** `Position = 3`
+
+**Complete C code:** [sample-1.c](sample-1.c)
 
 ## Sample 2
-**Source file:** `sample-2.c`
-**Input:** `programming`, `gram`
-**Working:** `gram` begins at index 3.
-**Expected output:** `Position = 3`
+
+**Complete C code:** [sample-2.c](sample-2.c)
 
 ## Sample 3
-**Source file:** `sample-3.c`
-**Input:** `computer`, `science`
-**Working:** The substring does not occur in the main string.
-**Expected output:** `Position = -1`
+
+**Complete C code:** [sample-3.c](sample-3.c)
