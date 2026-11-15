@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int n,x,d,p;printf("Enter n: ");if(scanf("%d",&n)!=1||n<2)return 1;printf("Prime numbers: ");for(x=2;x<=n;x++){p=1;for(d=2;d*d<=x;d++)if(x%d==0){p=0;break;}if(p)printf("%d ",x);}puts("");return 0;}
