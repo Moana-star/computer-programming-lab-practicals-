@@ -1,3 +1,12 @@
+/*
+ * PRACTICAL 14(a): Write a C program that uses functions and structures to perform: reading a complex number; writing a complex number; addition of two complex numbers; multiplication of two complex numbers.
+ * AIM: To perform arithmetic operations on complex numbers. Complex numbers are of type a+ib. Addition: (a+ib)+(x+iy)=a+x+i(b+y). Subtraction and multiplication formulas are also given in the manual.
+ * ALGORITHM: Start; read two complex numbers c1,c2; calculate and print c3=c1+c2; calculate and print c3=c1-c2; calculate and print c3=c1*c2; calculate and print c3=c1/c2; Stop. (The program menu also provides clear screen and exit options.)
+ * FLOWCHART: Start -> Display menu -> Read choice -> Read complex operands -> Call selected operation function -> Display result -> Repeat or exit.
+ * SAMPLE INPUT/OUTPUT: The manual does not provide a fixed sample input/output; it instructs students to record at least 3 results.
+ * RECORD: Record at least 3 results.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 struct complex { float real, img; };

@@ -1,3 +1,13 @@
+/*
+ * PRACTICAL 12(a): Write a C program to count the number of lines, words and characters in a given text.
+ * AIM: To count the number of lines, words and characters in a given list.
+ * ALGORITHM: Read text until an empty line; compare characters with newline to count lines; compare characters with tab or space to count words; detect end of text; count characters as the length of each line; print lines, words and characters; Stop.
+ * FLOWCHART: Start -> Initialize counters -> Read line until empty line -> Count words, lines and characters -> Print totals -> Stop.
+ * SAMPLE INPUT: Ramu is a good boy.
+ * EXPECTED OUTPUT: Number of characters=18; Number of words=5; Number of lines=1.
+ * RECORD: Record at least 3 results.
+ */
+
 #include <stdio.h>
 #include <string.h>
 int main(void)

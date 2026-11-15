@@ -1,3 +1,13 @@
+/*
+ * PRACTICAL 14(b): Write a C program to display the contents of a file.
+ * AIM: To display the contents of a file.
+ * ALGORITHM: Not separately stated in the manual; read file name; open source file in read mode; if file pointer is NULL print Source file cannot be opened; otherwise read characters until EOF and display them.
+ * FLOWCHART: Start -> Read file name -> Open file -> Check file pointer -> Display characters until EOF / print error -> Stop.
+ * SAMPLE INPUT: Enter the file name: sample.txt
+ * EXPECTED OUTPUT: this is my first program
+ * RECORD: Record at least 3 results.
+ */
+
 #include <stdio.h>
 int main(void)
 {

@@ -1,3 +1,12 @@
+/*
+ * PRACTICAL 15(b): Write a C program to merge two files into a third file (i.e., the contents of the first file followed by those of the second are put in the third).
+ * AIM: Not separately stated in the manual.
+ * ALGORITHM: Not separately stated in the manual; read first, second and destination file names; open first two files for reading and destination for writing; copy contents of first file to destination, then contents of second file; close files and display completion message.
+ * FLOWCHART: Start -> Read three file names -> Open files -> Copy first file -> Copy second file -> Close files -> Display success -> Stop.
+ * SAMPLE INPUT/OUTPUT: No fixed sample input/output is shown in the manual.
+ * RECORD: Record at least 3 results.
+ */
+
 #include <stdio.h>
 int main(void)
 {
