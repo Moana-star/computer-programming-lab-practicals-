@@ -198,7 +198,7 @@ Total = 4 + 1 + 8 + 1 + 2 + 1 = 17 characters
 
 **Output**
 ```text
-17 characters copied from 'a3.txt' to 'b3.txt'
+18 characters copied from 'a3.txt' to 'b3.txt'
 ```
 
 
