@@ -1,3 +1,31 @@
 #include <stdio.h>
-#include <ctype.h>
-int main(void){FILE *fp;char name[100];int ch,lines=0,words=0,chars=0,inword=0,last=-1;printf("Enter file name: ");scanf("%99s",name);fp=fopen(name,"r");if(!fp){perror("Cannot open file");return 1;}while((ch=fgetc(fp))!=EOF){chars++;if(ch=='\n')lines++;if(isspace((unsigned char)ch))inword=0;else if(!inword){words++;inword=1;}last=ch;}if(chars>0&&last!='\n')lines++;fclose(fp);printf("Lines = %d\nWords = %d\nCharacters = %d\n",lines,words,chars);return 0;}
+#include <string.h>
+int main(void)
+{
+    char line[256];
+    int lines = 0, words = 0, characters = 0, i, in_word;
+
+    printf("TYPE ANY TEXT. Give an empty line to finish.\n");
+    while (fgets(line, sizeof line, stdin) != NULL) {
+        if (line[0] == '\n' || line[0] == '\0')
+            break;
+
+        lines++;
+        characters += (int)strcspn(line, "\n");
+
+        in_word = 0;
+        for (i = 0; line[i] != '\0' && line[i] != '\n'; i++) {
+            if (line[i] == ' ' || line[i] == '\t')
+                in_word = 0;
+            else if (!in_word) {
+                words++;
+                in_word = 1;
+            }
+        }
+    }
+
+    printf("Number of lines = %d\n", lines);
+    printf("Number of words = %d\n", words);
+    printf("Number of characters = %d\n", characters);
+    return 0;
+}

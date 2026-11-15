@@ -1,2 +1,19 @@
 #include <stdio.h>
-int main(void){double a,x,b,den;printf("Enter a, x and b: ");if(scanf("%lf%lf%lf",&a,&x,&b)!=3)return 1;den=a*x-b;if(den==0){puts("Expression is undefined.");return 1;}printf("Result = %.2f\n",(a*x+b)/den);return 0;}
+int main(void)
+{
+    double a, b, x, s, denominator;
+
+    printf("Enter the values of a, b and x: ");
+    if (scanf("%lf%lf%lf", &a, &b, &x) != 3)
+        return 1;
+
+    denominator = a * x - b;
+    if (denominator == 0.0) {
+        printf("The expression is undefined because the denominator is zero.\n");
+        return 1;
+    }
+
+    s = (a * x + b) / denominator;
+    printf("The value of s = %f\n", s);
+    return 0;
+}
