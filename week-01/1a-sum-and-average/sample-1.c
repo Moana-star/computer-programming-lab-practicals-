@@ -4,7 +4,8 @@
  * ALGORITHM: Start; declare num1,num2,num3,sum,average; read three numbers; sum=num1+num2+num3; average=sum/3; display sum and average; Stop.
  * FLOWCHART: Start -> Read three integers -> Calculate sum -> Calculate average -> Display sum and average -> Stop.
  * SAMPLE INPUT: Enter any three integers: 2 4 5
- * EXPECTED OUTPUT: Sum and average of three integers: 11 3
+ * EXPECTED OUTPUT (PDF): Sum and average of three integers: 11 3
+ * NOTE: The PDF declares average as int and truncates 11/3 to 3. The runnable version below uses float for a mathematically precise average (3.67).
  * RECORD: Record at least 3 results.
  */
 

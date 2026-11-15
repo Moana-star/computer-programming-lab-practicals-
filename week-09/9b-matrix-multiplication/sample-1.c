@@ -4,7 +4,8 @@
  * ALGORITHM: Read matrix dimensions and elements; check whether columns of A equal rows of B; calculate c[i][j]=c[i][j]+a[i][k]*b[k][j]; display A, B and C; Stop.
  * FLOWCHART: Start -> Read matrix dimensions -> Check multiplication compatibility -> Read matrices -> Multiply using nested loops -> Display product -> Stop.
  * SAMPLE INPUT: A size 2x2: 1 0 / 2 6; B size 2x2: 3 4 / 4 2
- * EXPECTED OUTPUT: Product matrix: 3 4 / 30 20 (manual's printed sample shows 24 20; verify calculation: second row is 30 20).
+ * EXPECTED OUTPUT (PDF PRINTED): C matrix: 3 4 / 24 20
+ * NOTE: The PDF's printed second-row result is inconsistent with its own input matrices. Standard matrix multiplication gives 30 20 for the second row; the runnable program calculates 30 20.
  * RECORD: Record at least 3 results.
  */
 
