@@ -2,7 +2,7 @@
 int main(void)
 {
     FILE *fp1, *fp2;
-    char ch;
+    int ch;
     int count = 0;
 
     fp1 = fopen("a3.txt", "r");
