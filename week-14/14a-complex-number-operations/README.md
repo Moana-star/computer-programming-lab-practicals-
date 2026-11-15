@@ -1,33 +1,293 @@
-# 14(a) — Complex-number operations using functions and structures
+# WEEK 14 — COMPLEX NUMBERS AND FILE HANDLING
 
-**Manual:** Week 14, 14(a). The earlier worked samples used the following exact complex numbers and calculations. The program includes functions for reading, displaying, addition, subtraction, multiplication and division.
+## 14(a) Write a C program that uses functions and structures to perform operations on complex numbers.
 
-## Sample 1
-**Source file:** `sample-1.c`
-**Input:** First number = 2 + 3i; second number = 4 + 5i.
-**Calculation:** Addition: (2+4)+(3+5)i = 6+8i. Multiplication: (2×4−3×5)+(2×5+3×4)i = −7+22i.
-**Expected relevant results:**
-```text
-Addition = 6.00 + 8.00i
-Multiplication = -7.00 + 22.00i
+The three samples demonstrate addition, multiplication and division.
+
+### Sample 1 — Addition
+
+**Save as:** `Week14_14a_Sample1.c`
+
+**C program**
+```c
+#include <stdio.h>
+
+struct complex
+{
+    float real, img;
+};
+
+struct complex read_complex()
+{
+    struct complex c;
+    printf("Enter real part: ");
+    scanf("%f", &c.real);
+    printf("Enter imaginary part: ");
+    scanf("%f", &c.img);
+    return c;
+}
+
+void display_complex(struct complex c)
+{
+    if (c.img < 0)
+        printf("%.2f - i%.2f\n", c.real, -c.img);
+    else
+        printf("%.2f + i%.2f\n", c.real, c.img);
+}
+
+struct complex add_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real + b.real;
+    c.img = a.img + b.img;
+    return c;
+}
+
+struct complex sub_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real - b.real;
+    c.img = a.img - b.img;
+    return c;
+}
+
+struct complex mul_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real * b.real - a.img * b.img;
+    c.img = a.real * b.img + a.img * b.real;
+    return c;
+}
+
+struct complex div_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    float d = b.real * b.real + b.img * b.img;
+    c.real = (a.real * b.real + a.img * b.img) / d;
+    c.img = (a.img * b.real - a.real * b.img) / d;
+    return c;
+}
+
+int main()
+{
+    struct complex a, b, c;
+    printf("Enter first complex number:\n");
+    a = read_complex();
+    printf("Enter second complex number:\n");
+    b = read_complex();
+    c = add_complex(a, b);
+    printf("Addition result: ");
+    display_complex(c);
+    return 0;
+}
 ```
 
-## Sample 2
-**Source file:** `sample-2.c`
-**Input:** First number = 2 + 3i; second number = 4 + 5i.
-**Calculation:** Multiplication: (2×4−3×5)+(2×5+3×4)i = −7+22i.
-**Expected relevant result:**
+**Input**
 ```text
-Multiplication = -7.00 + 22.00i
+First complex number:\nReal part: 2\nImaginary part: 3\n\nSecond complex number:\nReal part: 4\nImaginary part: 5
 ```
 
-## Sample 3
-**Source file:** `sample-3.c`
-**Input:** First number = 4 + 2i; second number = 1 + i.
-**Calculation:** (4+2i)/(1+i) = ((4+2i)(1−i))/((1+i)(1−i)) = (6−2i)/2 = 3−i.
-**Expected relevant result:**
+**Working / calculation**
 ```text
-Division = 3.00 - 1.00i
+(2 + 3i) + (4 + 5i)\n= (2 + 4) + (3 + 5)i\n= 6 + 8i
 ```
 
-Compile: `gcc sample-1.c -o complex`.
+**Output**
+```text
+Enter first complex number:\nEnter real part: 2\nEnter imaginary part: 3\nEnter second complex number:\nEnter real part: 4\nEnter imaginary part: 5\nAddition result: 6.00 + i8.00
+```
+
+
+### Sample 2 — Multiplication
+
+**Save as:** `Week14_14a_Sample2.c`
+
+**C program**
+```c
+#include <stdio.h>
+
+struct complex
+{
+    float real, img;
+};
+
+struct complex read_complex()
+{
+    struct complex c;
+    printf("Enter real part: ");
+    scanf("%f", &c.real);
+    printf("Enter imaginary part: ");
+    scanf("%f", &c.img);
+    return c;
+}
+
+void display_complex(struct complex c)
+{
+    if (c.img < 0)
+        printf("%.2f - i%.2f\n", c.real, -c.img);
+    else
+        printf("%.2f + i%.2f\n", c.real, c.img);
+}
+
+struct complex add_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real + b.real;
+    c.img = a.img + b.img;
+    return c;
+}
+
+struct complex sub_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real - b.real;
+    c.img = a.img - b.img;
+    return c;
+}
+
+struct complex mul_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real * b.real - a.img * b.img;
+    c.img = a.real * b.img + a.img * b.real;
+    return c;
+}
+
+struct complex div_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    float d = b.real * b.real + b.img * b.img;
+    c.real = (a.real * b.real + a.img * b.img) / d;
+    c.img = (a.img * b.real - a.real * b.img) / d;
+    return c;
+}
+
+int main()
+{
+    struct complex a, b, c;
+    printf("Enter first complex number:\n");
+    a = read_complex();
+    printf("Enter second complex number:\n");
+    b = read_complex();
+    c = mul_complex(a, b);
+    printf("Multiplication result: ");
+    display_complex(c);
+    return 0;
+}
+```
+
+**Input**
+```text
+First complex number:\nReal part: 2\nImaginary part: 3\n\nSecond complex number:\nReal part: 4\nImaginary part: 5
+```
+
+**Working / calculation**
+```text
+(2 + 3i)(4 + 5i)\n= 8 + 10i + 12i + 15i²\n= 8 + 22i - 15\n= -7 + 22i
+```
+
+**Output**
+```text
+Enter first complex number:\nEnter real part: 2\nEnter imaginary part: 3\nEnter second complex number:\nEnter real part: 4\nEnter imaginary part: 5\nMultiplication result: -7.00 + i22.00
+```
+
+
+### Sample 3 — Division
+
+**Save as:** `Week14_14a_Sample3.c`
+
+**C program**
+```c
+#include <stdio.h>
+
+struct complex
+{
+    float real, img;
+};
+
+struct complex read_complex()
+{
+    struct complex c;
+    printf("Enter real part: ");
+    scanf("%f", &c.real);
+    printf("Enter imaginary part: ");
+    scanf("%f", &c.img);
+    return c;
+}
+
+void display_complex(struct complex c)
+{
+    if (c.img < 0)
+        printf("%.2f - i%.2f\n", c.real, -c.img);
+    else
+        printf("%.2f + i%.2f\n", c.real, c.img);
+}
+
+struct complex add_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real + b.real;
+    c.img = a.img + b.img;
+    return c;
+}
+
+struct complex sub_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real - b.real;
+    c.img = a.img - b.img;
+    return c;
+}
+
+struct complex mul_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    c.real = a.real * b.real - a.img * b.img;
+    c.img = a.real * b.img + a.img * b.real;
+    return c;
+}
+
+struct complex div_complex(struct complex a, struct complex b)
+{
+    struct complex c;
+    float d = b.real * b.real + b.img * b.img;
+    c.real = (a.real * b.real + a.img * b.img) / d;
+    c.img = (a.img * b.real - a.real * b.img) / d;
+    return c;
+}
+
+int main()
+{
+    struct complex a, b, c;
+    printf("Enter first complex number:\n");
+    a = read_complex();
+    printf("Enter second complex number:\n");
+    b = read_complex();
+    if (b.real == 0 && b.img == 0)
+    {
+        printf("Division by zero is not allowed.\n");
+        return 1;
+    }
+    c = div_complex(a, b);
+    printf("Division result: ");
+    display_complex(c);
+    return 0;
+}
+```
+
+**Input**
+```text
+First complex number:\nReal part: 4\nImaginary part: 2\n\nSecond complex number:\nReal part: 1\nImaginary part: 1
+```
+
+**Working / calculation**
+```text
+(4 + 2i) / (1 + i)\nMultiply numerator and denominator by (1 - i):\n[(4 + 2i)(1 - i)] / [(1 + i)(1 - i)]\n= (4 - 4i + 2i - 2i²) / (1 - i²)\n= (6 - 2i) / 2\n= 3 - i
+```
+
+**Output**
+```text
+Enter first complex number:\nEnter real part: 4\nEnter imaginary part: 2\nEnter second complex number:\nEnter real part: 1\nEnter imaginary part: 1\nDivision result: 3.00 - i1.00
+```
+
+

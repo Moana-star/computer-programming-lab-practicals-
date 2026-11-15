@@ -1,2 +1,0 @@
-#include <stdio.h>
-int main(void){FILE *fp;char name[100];int ch;printf("Enter file name: ");scanf("%99s",name);fp=fopen(name,"r");if(!fp){perror("Cannot open file");return 1;}puts("File contents:");while((ch=fgetc(fp))!=EOF)putchar(ch);fclose(fp);return 0;}
