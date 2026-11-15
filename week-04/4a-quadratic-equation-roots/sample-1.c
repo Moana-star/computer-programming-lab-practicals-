@@ -1,3 +1,31 @@
 #include <stdio.h>
 #include <math.h>
-int main(void){double a,b,c,d,r,i;printf("Enter a, b and c: ");if(scanf("%lf%lf%lf",&a,&b,&c)!=3||a==0)return 1;d=b*b-4*a*c;if(d>=0)printf("Roots: %.2f and %.2f\n",(-b+sqrt(d))/(2*a),(-b-sqrt(d))/(2*a));else{r=-b/(2*a);i=sqrt(-d)/(2*a);printf("Complex roots: %.2f + %.2fi and %.2f - %.2fi\n",r,i,r,i);}return 0;}
+
+int main(void)
+{
+    float a, b, c, d, realPart, imaginaryPart;
+
+    printf("Enter the coefficients a, b and c: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    d = b * b - 4 * a * c;
+
+    if (d > 0)
+    {
+        printf("Root 1 = %.2f\n", (-b + sqrtf(d)) / (2 * a));
+        printf("Root 2 = %.2f\n", (-b - sqrtf(d)) / (2 * a));
+    }
+    else if (d == 0)
+    {
+        printf("Both roots are equal = %.2f\n", -b / (2 * a));
+    }
+    else
+    {
+        realPart = -b / (2 * a);
+        imaginaryPart = sqrtf(-d) / (2 * a);
+        printf("Root 1 = %.2f + %.2fi\n", realPart, imaginaryPart);
+        printf("Root 2 = %.2f - %.2fi\n", realPart, imaginaryPart);
+    }
+
+    return 0;
+}

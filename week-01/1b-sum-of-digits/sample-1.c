@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int main(void) {
-    int number, digit, sum = 0;
+int main(void)
+{
+    int n, r, sum = 0;
 
     printf("Enter a positive integer: ");
-    if (scanf("%d", &number) != 1 || number < 0) {
-        printf("Please enter a non-negative integer.\n");
-        return 1;
+    scanf("%d", &n);
+
+    while (n != 0)
+    {
+        r = n % 10;
+        sum = sum + r;
+        n = n / 10;
     }
 
-    while (number > 0) {
-        digit = number % 10;
-        sum += digit;
-        number /= 10;
-    }
-
-    printf("Sum of digits = %d\n", sum);
+    printf("The sum of individual digits is: %d\n", sum);
     return 0;
 }

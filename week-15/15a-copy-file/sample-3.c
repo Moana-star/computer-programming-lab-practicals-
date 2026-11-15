@@ -1,2 +1,28 @@
 #include <stdio.h>
-int main(void){FILE *src,*dst;char source[120],target[120];int ch;printf("Enter source file: ");scanf("%119s",source);printf("Enter destination file: ");scanf("%119s",target);src=fopen(source,"r");if(!src){perror("Cannot open source");return 1;}dst=fopen(target,"w");if(!dst){perror("Cannot create destination");fclose(src);return 1;}while((ch=fgetc(src))!=EOF)fputc(ch,dst);fclose(src);fclose(dst);printf("Contents copied from %s to %s.\n",source,target);return 0;}
+int main(void)
+{
+    FILE *fp1, *fp2;
+    char ch;
+    int count = 0;
+
+    fp1 = fopen("a3.txt", "r");
+    fp2 = fopen("b3.txt", "w");
+
+    if (fp1 == NULL || fp2 == NULL)
+    {
+        printf("File opening error.\n");
+        return 1;
+    }
+
+    while ((ch = fgetc(fp1)) != EOF)
+    {
+        fputc(ch, fp2);
+        count++;
+    }
+
+    fclose(fp1);
+    fclose(fp2);
+
+    printf("%d characters copied from 'a3.txt' to 'b3.txt'\n", count);
+    return 0;
+}

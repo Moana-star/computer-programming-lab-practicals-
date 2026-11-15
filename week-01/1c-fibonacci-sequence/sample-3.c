@@ -1,2 +1,23 @@
 #include <stdio.h>
-int main(void){int n,i;unsigned long long a=0,b=1,c;printf("Enter number of terms: ");if(scanf("%d",&n)!=1||n<=0)return 1;printf("Fibonacci sequence: ");for(i=0;i<n;i++){printf("%llu%s",a,i==n-1?"\n":" ");c=a+b;a=b;b=c;}return 0;}
+
+int main(void)
+{
+    int f0 = 0, f1 = 1, f, n, i;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci sequence for the first %d terms:\n", n);
+
+    i = 0;
+    while (i < n)
+    {
+        printf("%d ", f0);
+        f = f0 + f1;
+        f0 = f1;
+        f1 = f;
+        i++;
+    }
+
+    return 0;
+}
