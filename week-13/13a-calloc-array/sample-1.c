@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void){int n,i,*a;printf("Enter number of elements: ");if(scanf("%d",&n)!=1||n<=0||n>100)return 1;a=calloc((size_t)n,sizeof(int));if(!a){puts("Memory allocation failed.");return 1;}printf("Enter %d elements: ",n);for(i=0;i<n;i++)if(scanf("%d",&a[i])!=1){free(a);return 1;}printf("Array elements: ");for(i=0;i<n;i++)printf("%d%s",a[i],i==n-1?"\n":" ");free(a);return 0;}

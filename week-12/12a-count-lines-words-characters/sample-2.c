@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include <ctype.h>
+int main(void){FILE *fp;char name[100];int ch,lines=0,words=0,chars=0,inword=0,last=-1;printf("Enter file name: ");scanf("%99s",name);fp=fopen(name,"r");if(!fp){perror("Cannot open file");return 1;}while((ch=fgetc(fp))!=EOF){chars++;if(ch=='\n')lines++;if(isspace((unsigned char)ch))inword=0;else if(!inword){words++;inword=1;}last=ch;}if(chars>0&&last!='\n')lines++;fclose(fp);printf("Lines = %d\nWords = %d\nCharacters = %d\n",lines,words,chars);return 0;}
