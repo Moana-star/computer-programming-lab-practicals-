@@ -1,23 +1,33 @@
 # 14(a) — Complex-number operations using functions and structures
 
-**Manual:** Week 14, 14(a). The program reads two complex numbers, displays their sum and product.
+**Manual:** Week 14, 14(a). The earlier worked samples used the following exact complex numbers and calculations. The program includes functions for reading, displaying, addition, subtraction, multiplication and division.
 
 ## Sample 1
 **Source file:** `sample-1.c`
-**Input:** `2 3` then `4 5`
-**Working:** Sum = (2+4)+(3+5)i = 6+8i. Product = (2×4−3×5)+(2×5+3×4)i = −7+22i.
-**Expected output:** `Sum = 6.00 + 8.00i`; `Product = -7.00 + 22.00i`.
+**Input:** First number = 2 + 3i; second number = 4 + 5i.
+**Calculation:** Addition: (2+4)+(3+5)i = 6+8i. Multiplication: (2×4−3×5)+(2×5+3×4)i = −7+22i.
+**Expected relevant results:**
+```text
+Addition = 6.00 + 8.00i
+Multiplication = -7.00 + 22.00i
+```
 
 ## Sample 2
 **Source file:** `sample-2.c`
-**Input:** `1 2` then `3 4`
-**Working:** Sum = 4+6i; product = (3−8)+(4+6)i = −5+10i.
-**Expected output:** `Sum = 4.00 + 6.00i`; `Product = -5.00 + 10.00i`.
+**Input:** First number = 2 + 3i; second number = 4 + 5i.
+**Calculation:** Multiplication: (2×4−3×5)+(2×5+3×4)i = −7+22i.
+**Expected relevant result:**
+```text
+Multiplication = -7.00 + 22.00i
+```
 
 ## Sample 3
 **Source file:** `sample-3.c`
-**Input:** `4 2` then `1 1`
-**Working:** Sum = 5+3i; product = (4−2)+(4+2)i = 2+6i.
-**Expected output:** `Sum = 5.00 + 3.00i`; `Product = 2.00 + 6.00i`.
+**Input:** First number = 4 + 2i; second number = 1 + i.
+**Calculation:** (4+2i)/(1+i) = ((4+2i)(1−i))/((1+i)(1−i)) = (6−2i)/2 = 3−i.
+**Expected relevant result:**
+```text
+Division = 3.00 - 1.00i
+```
 
 Compile: `gcc sample-1.c -o complex`.
