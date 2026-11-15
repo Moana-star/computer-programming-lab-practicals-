@@ -8,7 +8,19 @@ The first file's contents must appear first, followed by the contents of the sec
 
 **Save as:** `Week15_15b_Sample1.c`
 
-**Create `first1.txt`:**\n\n```text\nHello\n```\n\n**Create `second1.txt`:**\n\n```text\nWorld\n```\n\n**C program**
+**Create `first1.txt`:**
+
+```text
+Hello
+```
+
+**Create `second1.txt`:**
+
+```text
+World
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -62,17 +74,24 @@ int main()
 
 **Input**
 ```text
-First file: first1.txt\nSecond file: second1.txt\nDestination file: merge1.txt
+First file: first1.txt
+Second file: second1.txt
+Destination file: merge1.txt
 ```
 
 **Working / calculation**
 ```text
-First file = Hello\nSecond file = World\nMerged contents: HelloWorld
+First file = Hello
+Second file = World
+Merged contents: HelloWorld
 ```
 
 **Output**
 ```text
-Enter first file name: first1.txt\nEnter second file name: second1.txt\nEnter destination file name: merge1.txt\nFile merging successful.
+Enter first file name: first1.txt
+Enter second file name: second1.txt
+Enter destination file name: merge1.txt
+File merging successful.
 ```
 
 
@@ -80,7 +99,19 @@ Enter first file name: first1.txt\nEnter second file name: second1.txt\nEnter de
 
 **Save as:** `Week15_15b_Sample2.c`
 
-**Create `first2.txt`:**\n\n```text\nC programming\n```\n\n**Create `second2.txt`:**\n\n```text\nLaboratory\n```\n\n**C program**
+**Create `first2.txt`:**
+
+```text
+C programming
+```
+
+**Create `second2.txt`:**
+
+```text
+Laboratory
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -134,17 +165,24 @@ int main()
 
 **Input**
 ```text
-First file: first2.txt\nSecond file: second2.txt\nDestination file: merge2.txt
+First file: first2.txt
+Second file: second2.txt
+Destination file: merge2.txt
 ```
 
 **Working / calculation**
 ```text
-First file = C programming\nSecond file = Laboratory\nMerged contents: C programmingLaboratory
+First file = C programming
+Second file = Laboratory
+Merged contents: C programmingLaboratory
 ```
 
 **Output**
 ```text
-Enter first file name: first2.txt\nEnter second file name: second2.txt\nEnter destination file name: merge2.txt\nFile merging successful.
+Enter first file name: first2.txt
+Enter second file name: second2.txt
+Enter destination file name: merge2.txt
+File merging successful.
 ```
 
 
@@ -152,7 +190,19 @@ Enter first file name: first2.txt\nEnter second file name: second2.txt\nEnter de
 
 **Save as:** `Week15_15b_Sample3.c`
 
-**Create `first3.txt`:**\n\n```text\nComputer\n```\n\n**Create `second3.txt`:**\n\n```text\nScience\n```\n\n**C program**
+**Create `first3.txt`:**
+
+```text
+Computer
+```
+
+**Create `second3.txt`:**
+
+```text
+Science
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -206,17 +256,24 @@ int main()
 
 **Input**
 ```text
-First file: first3.txt\nSecond file: second3.txt\nDestination file: merge3.txt
+First file: first3.txt
+Second file: second3.txt
+Destination file: merge3.txt
 ```
 
 **Working / calculation**
 ```text
-First file = Computer\nSecond file = Science\nMerged contents: ComputerScience
+First file = Computer
+Second file = Science
+Merged contents: ComputerScience
 ```
 
 **Output**
 ```text
-Enter first file name: first3.txt\nEnter second file name: second3.txt\nEnter destination file name: merge3.txt\nFile merging successful.
+Enter first file name: first3.txt
+Enter second file name: second3.txt
+Enter destination file name: merge3.txt
+File merging successful.
 ```
 
 

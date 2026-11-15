@@ -8,7 +8,13 @@
 
 **Save as:** `Week15_15c_Sample1.c`
 
-**Create `reverse1.txt` containing:**\n\n```text\nCOMPUTER\n```\n\n**C program**
+**Create `reverse1.txt` containing:**
+
+```text
+COMPUTER
+```
+
+**C program**
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -57,7 +63,8 @@ int main(int argc, char *argv[])
 
 **Working / calculation**
 ```text
-First 4 characters = C O M P\nReverse = P M O C
+First 4 characters = C O M P
+Reverse = P M O C
 ```
 
 **Output**
@@ -70,7 +77,13 @@ Reversed characters: PMOC
 
 **Save as:** `Week15_15c_Sample2.c`
 
-**Create `reverse2.txt` containing:**\n\n```text\nPROGRAMMING\n```\n\n**C program**
+**Create `reverse2.txt` containing:**
+
+```text
+PROGRAMMING
+```
+
+**C program**
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -119,7 +132,8 @@ int main(int argc, char *argv[])
 
 **Working / calculation**
 ```text
-First 5 characters = P R O G R\nReverse = R G O R P
+First 5 characters = P R O G R
+Reverse = R G O R P
 ```
 
 **Output**
@@ -132,7 +146,13 @@ Reversed characters: RGORP
 
 **Save as:** `Week15_15c_Sample3.c`
 
-**Create `reverse3.txt` containing:**\n\n```text\nCOMPUTER SCIENCE\n```\n\n**C program**
+**Create `reverse3.txt` containing:**
+
+```text
+COMPUTER SCIENCE
+```
+
+**C program**
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -181,7 +201,8 @@ int main(int argc, char *argv[])
 
 **Working / calculation**
 ```text
-First 8 characters = C O M P U T E R\nReverse = R E T U P M O C
+First 8 characters = C O M P U T E R
+Reverse = R E T U P M O C
 ```
 
 **Output**

@@ -6,7 +6,13 @@
 
 **Save as:** `Week14_14b_Sample1.c`
 
-**Create `sample1.txt` with these contents:**\n\n```text\nthis is my first program\n```\n\n**C program**
+**Create `sample1.txt` with these contents:**
+
+```text
+this is my first program
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -46,7 +52,8 @@ Open the file in read mode and read each character with fgetc(), displaying it w
 
 **Output**
 ```text
-Enter the file name: sample1.txt\nthis is my first program
+Enter the file name: sample1.txt
+this is my first program
 ```
 
 
@@ -54,7 +61,13 @@ Enter the file name: sample1.txt\nthis is my first program
 
 **Save as:** `Week14_14b_Sample2.c`
 
-**Create `sample2.txt` with these contents:**\n\n```text\nC programming laboratory\n```\n\n**C program**
+**Create `sample2.txt` with these contents:**
+
+```text
+C programming laboratory
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -94,7 +107,8 @@ Open the file in read mode and read each character with fgetc(), displaying it w
 
 **Output**
 ```text
-Enter the file name: sample2.txt\nC programming laboratory
+Enter the file name: sample2.txt
+C programming laboratory
 ```
 
 
@@ -102,7 +116,13 @@ Enter the file name: sample2.txt\nC programming laboratory
 
 **Save as:** `Week14_14b_Sample3.c`
 
-**Create `sample3.txt` with these contents:**\n\n```text\nComputer science students\n```\n\n**C program**
+**Create `sample3.txt` with these contents:**
+
+```text
+Computer science students
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -142,7 +162,8 @@ Open the file in read mode and read each character with fgetc(), displaying it w
 
 **Output**
 ```text
-Enter the file name: sample3.txt\nComputer science students
+Enter the file name: sample3.txt
+Computer science students
 ```
 
 

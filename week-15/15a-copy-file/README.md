@@ -6,7 +6,13 @@
 
 **Save as:** `Week15_15a_Sample1.c`
 
-**Create `a1.txt` containing:**\n\n```text\nAn array is a collection of elements.\n```\n\n**C program**
+**Create `a1.txt` containing:**
+
+```text
+An array is a collection of elements.
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -50,7 +56,8 @@ The program reads a1.txt and writes to b1.txt.
 
 **Working / calculation**
 ```text
-Source file contains 37 characters.\nCharacters copied = 37
+Source file contains 37 characters.
+Characters copied = 37
 ```
 
 **Output**
@@ -63,7 +70,13 @@ Source file contains 37 characters.\nCharacters copied = 37
 
 **Save as:** `Week15_15a_Sample2.c`
 
-**Create `a2.txt` containing:**\n\n```text\nC programming\n```\n\n**C program**
+**Create `a2.txt` containing:**
+
+```text
+C programming
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -107,7 +120,11 @@ The program reads a2.txt and writes to b2.txt.
 
 **Working / calculation**
 ```text
-C programming\nC = 1 character\nSpace = 1 character\nprogramming = 11 characters\nTotal = 1 + 1 + 11 = 13 characters
+C programming
+C = 1 character
+Space = 1 character
+programming = 11 characters
+Total = 1 + 1 + 11 = 13 characters
 ```
 
 **Output**
@@ -120,7 +137,13 @@ C programming\nC = 1 character\nSpace = 1 character\nprogramming = 11 characters
 
 **Save as:** `Week15_15a_Sample3.c`
 
-**Create `a3.txt` containing:**\n\n```text\nFile handling in C\n```\n\n**C program**
+**Create `a3.txt` containing:**
+
+```text
+File handling in C
+```
+
+**C program**
 ```c
 #include <stdio.h>
 
@@ -164,7 +187,13 @@ The program reads a3.txt and writes to b3.txt.
 
 **Working / calculation**
 ```text
-File handling in C\nFile = 4 characters\nSpaces = 2 characters\nhandling = 8 characters\nin = 2 characters\nC = 1 character\nTotal = 4 + 1 + 8 + 1 + 2 + 1 = 17 characters
+File handling in C
+File = 4 characters
+Spaces = 2 characters
+handling = 8 characters
+in = 2 characters
+C = 1 character
+Total = 4 + 1 + 8 + 1 + 2 + 1 = 17 characters
 ```
 
 **Output**
