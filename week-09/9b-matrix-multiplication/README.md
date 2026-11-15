@@ -1,84 +1,35 @@
-# 9b — Multiply two matrices using functions
+# 9(b) — Multiply two matrices using functions
 
-**Manual:** Week 09, 9b
-
-Each sample is a complete, standalone C program. String inputs in these examples are single words (no spaces).
+**Manual:** Week 09, 9(b). The program checks that the number of columns in the first matrix equals the number of rows in the second matrix.
 
 ## Sample 1
-
 **Source file:** `sample-1.c`
-
-**Input**
-
+**Input:** A is 2×2 (1 2; 3 4); B is 2×2 (5 6; 7 8).
+**Working:** Each result entry is a row-column dot product.
+**Expected output:**
 ```text
-2 2
-2 2
-1 2 3 4
-5 6 7 8
-```
-
-**Working / calculation**
-
-Each output entry is a row-column dot product.
-
-**Expected output**
-
-```text
+Product matrix:
 19 22
 43 50
 ```
 
 ## Sample 2
-
 **Source file:** `sample-2.c`
-
-**Input**
-
+**Input:** A is 1×2 (2 3); B is 2×1 (4; 5).
+**Working:** 2×4 + 3×5 = 8 + 15 = 23.
+**Expected output:**
 ```text
-1 2
-2 1
-2 3
-4 5
-```
-
-**Working / calculation**
-
-[2×4+3×5; 2×4+3×5] = 23 and 38 for the two rows.
-
-**Expected output**
-
-```text
+Product matrix:
 23
-38
 ```
 
 ## Sample 3
-
 **Source file:** `sample-3.c`
-
-**Input**
-
+**Input:** A is 2×3 (1 2 3; 4 5 6); B is 3×2 (7 8; 9 10; 11 12).
+**Working:** Compute each row of A multiplied by each column of B.
+**Expected output:**
 ```text
-2 3
-3 2
-1 2 3 4 5 6
-7 8 9 10 11 12
-```
-
-**Working / calculation**
-
-Compute each row of A multiplied by each column of B.
-
-**Expected output**
-
-```text
+Product matrix:
 58 64
 139 154
-```
-
-## Compile and run
-
-```bash
-gcc sample-1.c -o program
-./program
 ```
