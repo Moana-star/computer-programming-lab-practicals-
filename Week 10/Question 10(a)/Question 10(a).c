@@ -4,7 +4,7 @@
 int main(void)
 {
     char a[100], b[50], c[150];
-    int pos, la, lb, i, j, k;
+    int pos, la, lb, i, j;
 
     printf("Enter a string: ");
     if (fgets(a, sizeof(a), stdin) == NULL) return 1;
@@ -17,24 +17,23 @@ int main(void)
     la = (int)strlen(a);
     lb = (int)strlen(b);
 
-    printf("Enter position for insertion (1 to %d): ", la + 1);
-    if (scanf("%d", &pos) != 1 || pos < 1 || pos > la + 1) {
+    printf("Enter position for insertion (0 to %d): ", la);
+    if (scanf("%d", &pos) != 1 || pos < 0 || pos > la) {
         printf("Invalid insertion position.\n");
         return 1;
     }
 
     i = 0;
-    for (j = 0; j < pos - 1; j++)
+    for (j = 0; j < pos; j++)
         c[i++] = a[j];
 
     for (j = 0; j < lb; j++)
         c[i++] = b[j];
 
-    for (j = pos - 1; j < la; j++)
+    for (j = pos; j < la; j++)
         c[i++] = a[j];
 
     c[i] = '\0';
-
     printf("String after Insertion is:\n%s\n", c);
     return 0;
 }

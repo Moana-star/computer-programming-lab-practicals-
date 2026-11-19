@@ -12,20 +12,20 @@ int main(void)
 
     length = (int)strlen(a);
 
-    printf("Enter position for deletion (1 to %d): ", length);
-    if (scanf("%d", &pos) != 1 || pos < 1 || pos > length) {
+    printf("Enter position for deletion (0 to %d): ", length - 1);
+    if (scanf("%d", &pos) != 1 || pos < 0 || pos >= length) {
         printf("Invalid deletion position.\n");
         return 1;
     }
 
     printf("Enter number of characters to be deleted: ");
-    if (scanf("%d", &n) != 1 || n < 0 || n > length - (pos - 1)) {
+    if (scanf("%d", &n) != 1 || n < 0 || n > length - pos) {
         printf("Invalid number of characters.\n");
         return 1;
     }
 
-    i = pos - 1;
-    j = i + n;
+    i = pos;
+    j = pos + n;
     while (a[j] != '\0') {
         a[i] = a[j];
         i++;
