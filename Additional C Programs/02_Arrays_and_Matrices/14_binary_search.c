@@ -1,3 +1,31 @@
 #include <stdio.h>
 #define N 100
-int main(void){int a[N],n,x,l=0,r,m,pos=-1;if(scanf("%d",&n)!=1||n<1||n>N)return 1;for(int i=0;i<n;i++){if(scanf("%d",&a[i])!=1||(i&&a[i]<a[i-1])){puts("Enter sorted values.");return 1;}}if(scanf("%d",&x)!=1)return 1;r=n-1;while(l<=r){m=l+(r-l)/2;if(a[m]==x){pos=m;break;}if(a[m]<x)l=m+1;else r=m-1;}if(pos<0)puts("Not found");else printf("Found at position %d\n",pos+1);return 0;}
+int main(void)
+{
+    int a[N],n,x,l=0,r,m,pos=-1;
+    if(scanf("%d",&n)!=1||n<1||n>N)return 1;
+    for(int i=0;i<n;i++)
+    {
+        if(scanf("%d",&a[i])!=1||(i&&a[i]<a[i-1]))
+        {
+            puts("Enter sorted values.");
+            return 1;
+        }
+    }
+    if(scanf("%d",&x)!=1)return 1;
+    r=n-1;
+    while(l<=r)
+    {
+        m=l+(r-l)/2;
+        if(a[m]==x)
+        {
+            pos=m;
+            break;
+        }
+        if(a[m]<x)l=m+1;
+        else r=m-1;
+    }
+    if(pos<0)puts("Not found");
+    else printf("Found at position %d\n",pos+1);
+    return 0;
+}
