@@ -1,3 +1,23 @@
 #include <stdio.h>
 #include <ctype.h>
-int main(void){char s[500];int v=0,c=0,d=0,w=0,o=0;if(!fgets(s,sizeof s,stdin))return 1;for(int i=0;s[i];i++){unsigned char x=(unsigned char)s[i];if(isalpha(x)){x=(unsigned char)tolower(x);if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u')v++;else c++;}else if(isdigit(x))d++;else if(isspace(x))w++;else o++;}printf("Vowels=%d Consonants=%d Digits=%d Whitespace=%d Other=%d\n",v,c,d,w,o);return 0;}
+int main(void)
+{
+    char s[500];
+    int v=0,c=0,d=0,w=0,o=0;
+    if(!fgets(s,sizeof s,stdin))return 1;
+    for(int i=0;s[i];i++)
+    {
+        unsigned char x=(unsigned char)s[i];
+        if(isalpha(x))
+        {
+            x=(unsigned char)tolower(x);
+            if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u')v++;
+            else c++;
+        }
+        else if(isdigit(x))d++;
+        else if(isspace(x))w++;
+        else o++;
+    }
+    printf("Vowels=%d Consonants=%d Digits=%d Whitespace=%d Other=%d\n",v,c,d,w,o);
+    return 0;
+}
