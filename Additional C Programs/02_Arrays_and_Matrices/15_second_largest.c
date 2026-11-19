@@ -1,3 +1,18 @@
 #include <stdio.h>
 #define N 100
-int main(void){int a[N],n,largest,second=0,has=0;if(scanf("%d",&n)!=1||n<2||n>N)return 1;for(int i=0;i<n;i++)if(scanf("%d",&a[i])!=1)return 1;largest=a[0];for(int i=1;i<n;i++)if(a[i]>largest)largest=a[i];for(int i=0;i<n;i++)if(a[i]<largest&&(!has||a[i]>second)){second=a[i];has=1;}if(has)printf("Second-largest distinct value = %d\n",second);else puts("No second distinct value");return 0;}
+int main(void)
+{
+    int a[N],n,largest,second=0,has=0;
+    if(scanf("%d",&n)!=1||n<2||n>N)return 1;
+    for(int i=0;i<n;i++)if(scanf("%d",&a[i])!=1)return 1;
+    largest=a[0];
+    for(int i=1;i<n;i++)if(a[i]>largest)largest=a[i];
+    for(int i=0;i<n;i++)if(a[i]<largest&&(!has||a[i]>second))
+    {
+        second=a[i];
+        has=1;
+    }
+    if(has)printf("Second-largest distinct value = %d\n",second);
+    else puts("No second distinct value");
+    return 0;
+}
