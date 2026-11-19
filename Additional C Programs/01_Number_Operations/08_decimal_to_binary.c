@@ -1,2 +1,17 @@
 #include <stdio.h>
-int main(void){unsigned int n,b[32],k=0;printf("Enter non-negative integer: ");if(scanf("%u",&n)!=1)return 1;if(!n)b[k++]=0;while(n){b[k++]=n%2;n/=2;}printf("Binary = ");while(k)printf("%u",b[--k]);puts("");return 0;}
+int main(void)
+{
+    unsigned int n,b[32],k=0;
+    printf("Enter non-negative integer: ");
+    if(scanf("%u",&n)!=1)return 1;
+    if(!n)b[k++]=0;
+    while(n)
+    {
+        b[k++]=n%2;
+        n/=2;
+    }
+    printf("Binary = ");
+    while(k)printf("%u",b[--k]);
+    puts("");
+    return 0;
+}
