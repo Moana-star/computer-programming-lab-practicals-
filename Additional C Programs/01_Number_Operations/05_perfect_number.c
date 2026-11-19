@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int n;long long s=0;printf("Enter positive integer: ");if(scanf("%d",&n)!=1||n<1)return 1;for(int i=1;i<=n/2;i++)if(n%i==0)s+=i;printf("Proper-divisor sum = %lld\n%s\n",s,s==n?"Perfect number":"Not a perfect number");return 0;}

@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int n,t,d=0;long long s=0;printf("Enter non-negative integer: ");if(scanf("%d",&n)!=1||n<0)return 1;t=n;do{d++;t/=10;}while(t);t=n;do{int x=t%10;long long p=1;for(int i=0;i<d;i++)p*=x;s+=p;t/=10;}while(t);printf("%d is %san Armstrong number.\n",n,s==n?"":"not ");return 0;}

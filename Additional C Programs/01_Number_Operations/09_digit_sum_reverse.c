@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){unsigned int n,t,s=0;unsigned long long r=0;printf("Enter non-negative integer: ");if(scanf("%u",&n)!=1)return 1;t=n;do{int d=t%10;s+=d;r=r*10+d;t/=10;}while(t);printf("Digit sum = %u\nReverse = %llu\n",s,r);return 0;}
